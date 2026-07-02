@@ -1,0 +1,45 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Định dạng các trang sách */
+.page {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden; /* Đảm bảo ảnh không tràn ra ngoài */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Định dạng cho bìa cứng */
+.page-cover {
+    background-color: #333;
+    color: white;
+    border: 2px solid #222;
+}
+
+/* Định dạng cho hình ảnh tràn viền trang sách */
+.page-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hình ảnh tự cắt cho vừa khung mà không bị méo */
+}
+
+.page-text {
+    padding: 20px;
+    text-align: center;
+}
